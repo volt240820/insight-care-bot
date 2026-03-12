@@ -2,31 +2,24 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <!-- ★ 핵심: viewport 너비를 대시보드 최소 너비인 1400으로 고정합니다 ★ -->
+    <meta name="viewport" content="width=1400">
     <title>스마트 통합관리 대시보드</title>
     <style>
         body, html {
             margin: 0; padding: 0;
-            height: 100%; width: 100%;
-            overflow: auto; /* 스크롤 허용 */
+            width: 1400px; height: 100%;
+            overflow-x: hidden;
             background-color: #f8f9fa;
-        }
-        .iframe-container {
-            width: 100%; height: 100%;
-            display: flex;
-            flex-direction: column;
         }
         iframe {
             border: none;
-            width: 100%;
-            height: 100vh; /* 화면 꽉 차게 */
+            width: 1400px;
+            height: 100vh;
         }
     </style>
 </head>
 <body>
-    <div class="iframe-container">
-        <!-- scrolling="yes"를 추가하여 모바일 스크롤 보장 -->
-        <iframe src="https://script.google.com/macros/s/AKfycbzt8SJAtZ67RxZlQ6qSSGRhpv8LpR4zWI6nNJXIiF_9vMNsaJBAALzb_OQFRcb_j9rKDA/exec" scrolling="yes"></iframe>
-    </div>
+    <iframe src="https://script.google.com/macros/s/AKfycbzt8SJAtZ67RxZlQ6qSSGRhpv8LpR4zWI6nNJXIiF_9vMNsaJBAALzb_OQFRcb_j9rKDA/exec"></iframe>
 </body>
 </html>
